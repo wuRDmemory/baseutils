@@ -1,3 +1,5 @@
+set ts=4
+set expandtab
 set autoindent
 set nowrap
 set tabstop=4
@@ -40,7 +42,9 @@ let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/.
 let g:ycm_cache_omnifunc=0
 "let g:syntastic_ignore_files=[".*\.py$"]"
 let g:ycm_warning_symbol='>*'
-let g:ycm_goto_buffer_command = 'vertical-split'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_goto_buffer_command = 'horizontal-split'
 
 
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
